@@ -1,0 +1,298 @@
+body {
+     font-family: 'Arial', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #d8e2dc;
+     color: #9d8189;
+     line-height: 1.6;
+}
+
+header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.2rem 1rem;
+     background-color: #f28482;
+     color: white;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+     display: flex;
+     align-items: center;
+}
+
+header .logo i {
+     font-size: 2rem;
+     margin-right: 0.5rem;
+}
+
+header nav ul {
+     display: flex;
+     list-style: none;
+     margin-right: 1rem;
+}
+
+header nav ul li {
+     margin-left: 1rem;
+     margin-right: 1rem;
+}
+
+header nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: large;
+}
+
+.banner {
+     text-align: center;
+     padding: 1.5rem;
+     background-color: #96c7bb;
+     color: white;
+     border-bottom: 5px solid #f28482;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner h2 {
+     font-size: 2.5rem;
+     font-weight: bold;
+     font-family: 'Segoe UI';
+     color: #d36a68;
+     margin-bottom: 1rem;
+     letter-spacing: 1px;
+     font-variant: initial;
+     text-shadow: -1px -1px 0 #fffefe, 1px -1px 0 #fffefe, -1px 1px 0 #fffefe, 1px 1px 0 #fffefe;
+}
+
+.intro-text {
+     font-size: 1.3rem;
+     font-family: 'Merriweather', serif;
+     line-height: 1.8;
+     margin: 0 auto;
+     text-align: center;
+     color: #ffffff;
+     max-width: 1000px;
+}
+
+.intro-text ul {
+     margin: 1rem auto;
+     list-style-type: none;
+     padding: 0;
+}
+
+.intro-text li {
+     margin-bottom: 0.5rem;
+     font-size: 1.2rem;
+     position: relative;
+     color: #ffdee0;
+}
+
+.cta-text {
+     font-size: 1.5rem;
+     font-weight: bold;
+     font-family: 'Georgia', serif;
+     color: #f28482;
+     margin-top: 2rem;
+     text-align: center;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+}
+
+
+.courses {
+     padding: 2rem;
+     background-color: #ffe5d9;
+}
+
+.courses h2 {
+     text-align: center;
+     margin-top: -1rem;
+     margin-bottom: 1rem;
+     color: #4a4a4a;
+     font-size: 40px;
+}
+
+.course-list {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 1rem;
+}
+
+.course {
+     background-color: white;
+     border: 1px solid #ffcad4;
+     border-radius: 8px;
+     padding: 1rem;
+     text-align: center;
+     border: 3px;
+     box-shadow: 0 2px 5px #64565a;
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+     transform: scale(1.05);
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+     font-family: 'DM Serif Display';
+     font-size: 30px;
+}
+
+.course h3 {
+     color: #f28482;
+}
+
+button {
+     background-color: #f28482;
+     border: none;
+     padding: 0.5rem 1rem;
+     color: white;
+     font-size: 1rem;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+     background-color: green;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+     text-align: center;
+     padding: 1rem;
+     background-color: #f4acb7;
+     color: rgb(97, 89, 89);
+}
+
+footer p {
+     margin: 0.5rem 0;
+}
+
+.progress {
+     width: 100%;
+     background-color: #ffe5d9;
+     border-radius: 5px;
+     overflow: hidden;
+     margin: 1rem 0;
+}
+
+.progress-bar {
+     height: 10px;
+     background-color: #f28482;
+     width: 0%;
+     transition: width 0.5s;
+}
+
+iframe {
+     width: 100%;
+     height: 300px;
+     border-radius: 10px;
+     margin-top: 1rem;
+}
+
+button.quiz-btn {
+     background: linear-gradient(to right, #6c63ff, #514bcf);
+     color: white;
+     padding: 0.5rem 1rem;
+     border-radius: 8px;
+     font-size: 1rem;
+     border: none;
+     cursor: pointer;
+     margin-top: 1rem;
+     transition: transform 0.2s, background 0.3s;
+}
+
+button.quiz-btn:hover {
+     transform: scale(1.1);
+     background: linear-gradient(to right, #514bcf, #6c63ff);
+}
+
+.container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 16px;
+     /* Adds space between grid items */
+}
+
+#quiz-modal {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 1000;
+     background: #fff;
+     width: 90%;
+     max-width: 500px;
+     border-radius: 10px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+     padding: 1.5rem;
+}
+
+#quiz-modal h2 {
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+     color: #333;
+     text-align: center;
+}
+
+.quiz-content {
+     margin-bottom: 1rem;
+}
+
+.quiz-content label {
+     display: block;
+     margin-bottom: 0.5rem;
+     font-size: 1rem;
+     color: #555;
+}
+
+.quiz-content input[type="radio"] {
+     margin-right: 0.5rem;
+}
+
+#quiz-modal button {
+     background: #f28482;
+     color: #fff;
+     border: none;
+     padding: 0.5rem;
+     font-size: 1rem;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+     transition: 0.3s;
+}
+
+#quiz-modal button:hover {
+     background: #d36a68;
+}
+
+#modal-overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 999;
+}
+
+.close-modal {
+     background: none;
+     border: none;
+     font-size: 1.2rem;
+     color: #333;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+.close-modal:hover {
+     color: #f28482;
+}

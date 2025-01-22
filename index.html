@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Techsphere - Learn & Grow</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="ex1.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+     <header>
+          <div class="logo">
+               <i class="fas fa-graduation-cap"></i>
+               <h1> Techsphere</h1>
+          </div>
+          <nav>
+               <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+               </ul>
+          </nav>
+     </header>
+
+     <section id="home" class="banner">
+          <h2>📚 Explore. Learn. Achieve. 🚀</h2>
+          <div class="intro-text">
+               <p>
+                    Welcome to <strong>Techsphere</strong>, your ultimate platform to master the tech skills that
+                    matter.
+               </p>
+               <p>
+                    🚀 Dive into curated learning experiences that include:
+               </p>
+               <ul>
+                    <li>Interactive tasks and hands-on projects</li>
+                    <li>Dynamic quizzes to test your knowledge</li>
+                    <li>Progress tracking to monitor your growth</li>
+               </ul>
+               <p>
+                    Whether you're a beginner or an advanced learner, Techsphere offers expert tutorials tailored to
+                    challenge and inspire you.
+               </p>
+               <p>
+                    Turn your aspirations into achievements and build the future you deserve with Techsphere!
+               </p>
+          </div>
+          <p class="cta-text">
+               Unleash your potential today! 🌟
+          </p>
+     </section>
+
+
+     <section id="courses" class="courses">
+          <h2>Our Courses</h2>
+          <div class="container">
+               <div class="course">
+                    <h3>Machine Learning 🤖</h3>
+                    <iframe src="https://www.youtube.com/embed/GwIo3gDZCVQ" frameborder="0" allowfullscreen></iframe>
+                    <p>Master predictive modeling, data analysis, and AI techniques.</p>
+                    <div class="progress">
+                         <div class="progress-bar" data-completion="50"></div>
+                    </div>
+                    <button class="progress-btn">Mark as Complete</button>
+                    <button class="quiz-btn" data-course="machine-learning">Take the Quiz</button>
+               </div>
+               <div class="course">
+                    <h3>Web Development 🌐</h3>
+                    <iframe src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allowfullscreen></iframe>
+                    <p>Learn HTML, CSS, JavaScript, and build dynamic websites.</p>
+                    <div class="progress">
+                         <div class="progress-bar" data-completion="30"></div>
+                    </div>
+                    <button class="progress-btn">Mark as Complete</button>
+                    <button class="quiz-btn" data-course="web-development">Take the Quiz</button>
+               </div>
+          </div>
+     </section>
+
+
+     <div id="quiz-modal" class="quiz-modal hidden">
+          <div class="quiz-content">
+               <h2>Quiz</h2>
+               <div id="quiz-questions"></div>
+               <button id="submit-quiz">Submit Quiz</button>
+          </div>
+     </div>
+
+     <footer>
+          <p>© Techsphere - Empowering Learning</p>
+          <p>Connect with us: <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i
+                    class="fab fa-linkedin"></i></p>
+          <p>Contact us on 123456789 for further details</p>
+     </footer>
+
+     <script src="ex1.js"></script>
+</body>
+
+</html>
